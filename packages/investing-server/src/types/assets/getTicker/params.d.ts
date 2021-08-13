@@ -6,6 +6,6 @@
  */
 
 export interface GetTickerParams {
-  ticker: string
-  [k: string]: unknown
+  ticker: string;
+  [k: string]: unknown;
 }

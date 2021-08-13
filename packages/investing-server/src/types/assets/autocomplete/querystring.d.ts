@@ -6,6 +6,6 @@
  */
 
 export interface AutocompleteQuerystring {
-  keyword: string
-  [k: string]: unknown
+  keyword: string;
+  [k: string]: unknown;
 }

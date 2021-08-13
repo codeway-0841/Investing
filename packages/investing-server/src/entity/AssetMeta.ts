@@ -30,7 +30,7 @@ export class AssetMeta {
     onDelete: 'CASCADE',
     cascade: true,
   })
-  @JoinColumn({ name: 'stock_id' })
+  @JoinColumn({ name: 'asset_id' })
   asset!: Asset
 
   @Index()

@@ -5,8 +5,8 @@ import {
   OneToOne,
   ManyToOne,
   JoinColumn,
-  OneToMany,
   Index,
+  OneToMany,
   getRepository,
 } from 'typeorm'
 import { AssetMeta } from './AssetMeta'
@@ -19,6 +19,7 @@ import { SectorWeighting } from './SectorWeighting'
 export class Asset {
   @PrimaryGeneratedColumn()
   id!: number
+
   @Index({ unique: true })
   @Column({
     type: 'varchar',
@@ -48,7 +49,7 @@ export class Asset {
   @Column({
     nullable: true,
   })
-  image!: string
+  image!: string // /logos/us_stock/TSLA.png
 
   @Column()
   is_etf!: boolean

@@ -1,4 +1,4 @@
-import { RawHistoricalPrice } from '../../finance-api/getHistoricalPrice'
+import { RawHistoricalPrice } from '../../lib/finance-api/getHistoricalPrice'
 import { format } from 'date-fns'
 
 type MonthlyHistoricalPrice = {
